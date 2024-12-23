@@ -28,7 +28,7 @@ MongoClient.connect(MongoDB, { useNewUrlParser: true, useUnifiedTopology: true }
 // Routes
 app.get('/api/jobs', async (req, res) => {
   try {
-    const { location, page = 1, limit = 12 } = req.query;
+    const { location, page = 1, limit = 8 } = req.query;
 
     // Fetch jobs from MongoDB collection
     const db = dbClient.db('Mployee_Json');  // Replace with your database name
