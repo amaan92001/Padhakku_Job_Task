@@ -7,7 +7,7 @@ function App() {
   const [location, setLocation] = useState('');
   const [page, setPage] = useState(1);
   const [totalJobs, setTotalJobs] = useState(0);
-  const limit = 12;
+  const limit = 8;
 
   useEffect(() => {
     fetchJobs();
