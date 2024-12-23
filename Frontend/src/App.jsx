@@ -14,7 +14,7 @@ function App() {
   }, [location, page]);
 
   const fetchJobs = async () => {
-    const response = await axios.get(`http://localhost:5000/api/jobs?location=${location}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`https://padhakku-job-listing.onrender.com/api/jobs?location=${location}&page=${page}&limit=${limit}`);
     setJobs(response.data.jobs);
     setTotalJobs(response.data.total);
   };
